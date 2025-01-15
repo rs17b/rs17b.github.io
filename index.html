@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>rs17b...in space!</title>
+  <style>
+    body {
+      background-color: #000;
+      background-image: url('space.gif'); 
+      background-repeat: repeat;
+      font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+    @keyframes blink {
+      0%   { opacity: 1; }
+      50%  { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .blink {
+      animation: blink 1s infinite;
+    }
+    .navbar {
+      background-color: #008080;
+      text-align: center;
+      padding: 6px 0;
+      border-bottom: 3px solid #000080;
+    }
+    .navbar a {
+      font-weight: bold;
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 80%;
+      max-width: 800px;
+      margin: 15px auto;
+      background-color: #C0C0C0;
+      border: 4px groove #000080;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #000080;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      background-color: #008080; /* teal */
+      border-top: 3px solid #000080;
+      padding: 8px 0;
+      color: #FFFFFF;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    .web-rings {
+      margin-top: 10px;
+    }
+    .web-rings a {
+      font-weight: bold;
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .web-rings a:hover {
+      text-decoration: underline;
+    }
+    .counter {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+    .counter img {
+      width: 16px;
+      height: 22px;
+      margin: 0 1px;
+    }
+    hr {
+      border: none;
+      border-top: 3px solid #000080; 
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+<!--     <a href="about.html">About</a> -->
+    <a href="https://github.com/rs17b">GitHub</a>
+    <a href="https://www.linkedin.com/in/rs17b">LinkedIn</a>
+  </div>
+  <div class="container">
+    <marquee behavior="scroll" direction="left" scrollamount="4" style="color: #800080; font-weight: bold;">
+      Welcome to My Website!!! The Official Homepage for All Things Matthew Gambill!!!! 
+    </marquee>
+    <hr>
+    <p align="center">
+		Hello, my name is Matthew Gambill, and I am a software engineer based in New York City. I pride myself on being a “fixer” who is passionate about performance, reliability, efficiency, and debugging. I have optimized some of the most widely used mobile applications in the world, tackled nearly intractable crashes and bugs, and fine-tuned the performance of complex machine learning pipelines.
+    </p>
+    <hr>
+    <p>
+    	Work Experience
+    	<br>
+    	<strong>Meta (Formerly Facebook)</strong>
+    	<br>
+    	December 2017 - July 2023
+    	<br>
+    	<p>
+			<strong>High Level Impact</strong>
+			<br>
+			<ul>
+				<li>Spearheaded numerous cross-functional initiatives related to the startup performance of the Facebook iOS app, drastically improving launch time and responsiveness, for example, made dynamic function and class references static, enabling the removal of the -ObjC flag from dynamically loaded binaries, moved tens of MBs of code out of the startup set, introduced tooling to find large build graph dependencies only referenced for a small subset of functionality, etc.</li>
+				<li>Delivered major stability wins by diagnosing and fixing “super bugs,” cutting top crashes and reducing %SAD (sad users) by up to 90% in the Messenger iOS app.</li>
+				<li>Drove critical ML infrastructure improvements through Python modularity tooling and dynamic dead-code analysis investigations, ultimately advancing distributed training and inference efficiency at scale.</li>
+				<li>Optimized Instagram’s machine learning inference engine, reducing query time by 5–10%.</li>
+			</ul>
+			<strong>Leadership</strong>
+			<br>
+			<ul>
+				<li>Mentored senior engineers, accelerating their onboarding, guiding them through Meta’s internal tooling, and setting them up for success.</li>
+				<li>Gave tech talks at company-wide summits to share insights on debugging, performance, triage, and best practices for tackling complex crashes and reliability issues.</li>
+				<li>Actively contributed to recruiting efforts by attending university events, conducting 100+ system design interviews, and volunteering as a candidate guide.</li>
+				<li>Built strong cross-team relationships, collaborating with product, infrastructure, and data science partners to shape and drive large-scale technical roadmaps.</li>
+			</ul>
+			<strong>Engineering Excellence</strong>
+			<br>
+			<ul>
+				<li>Consistently raised the quality bar by refactoring unwieldy code paths and introducing robust build-time checks, for example, moving from preprocessor macros to a plugin based architecture for cross binary communication, adopting -Wundef flag usage, ensuring nullability contracts, etc..</li>
+				<li>Developed powerful automation tools to automatically identify and break down monolithic Python and C++ targets, speeding up build times and improving dependency hygiene.</li>
+				<li>Led iOS architecture improvements by consolidating cross binary dynamic function calls into a plugin-based system, eliminating code duplication, and standardizing best practices across the org.</li>
+				<li>Proactively cleaned up error-categorization pipelines for FBLearner to improve reliability, reduce over-aggregation, and deliver actionable data for debugging.</li>
+			</ul>
+			<strong>Direction & Initiative</strong>
+			<br>
+			<ul>
+				<li>Identified large-scale, high-impact projects, built alignment across teams, and executed from concept to completion.</li>
+				<li>Operated autonomously in ambiguous domains, for example, AI reliability, Messenger “super bugs,” and FBLearner code base improvements, ramping up quickly and owning outcomes with minimal oversight.</li>
+				<li>Took on complex, self-initiated challenges that streamlined engineering workflows for teams across the company.</li>
+				<li>Persistently unblocked and escalated issues, driving cross-team efforts and aligning on clear metrics for success.</li>
+			</ul>
+		</p>
+    	<br>
+    	<br>
+    	<strong>Dow Jones and The Wall Street Journal</strong>
+    	<br>
+    	February 2013 - November 2017
+    	<br>
+    	<p>
+    		I worked as a senior engineer to help shape the future of the flagship iOS and iPad app for the Wall Street Journal. I was successful in driving feature development and keeping the app healthy by focusing on key PREQ metrics.
+    		<ul>
+    			<li>Consistently delivered high impact feature development, for example, real-time inline stock quotes, recommended and saved articles, and interactive inline photo and media playback, that drove engagement and user signups.</li>
+    			<li>Led the refactoring efforts of the page layout system, enabling custom navigation and server driven section embedding.</li>
+    			<li>Architected the initial version of the WSJ app for Apple Watch.</li>
+    			<li>Advocated for increased efficiency including network usage, battery health, and crash reduction.</li>
+    		</ul>
+		</p>
+    	<br>
+    	<br>
+    	<strong>Campbell/Gambill Designs</strong>
+    	<br>
+    	October 2008 - February 2013
+    	<br>
+    	<p>
+    		I cofounded an app development agency after the release of iPhoneOS 2.0 and the App Store in the Summer of 2008. My partner and I created and distributed dozens of apps during the agency's active years and partnered with clients to bring their visions to life. Some notable selections are listed below:
+    		<p>
+    			<strong>Attractions Magazine iOS and iPad App</strong>
+	    		<br>
+    			This app was released with the introduction of the iPad and served as the digital hub for Attractions Magazine (a theme park publication specializing in Disney and Universal). It incorporated a store where users could buy individual magazine issues or subscribe on a yearly basis and receive issues as they were published. The app also allowed users to view Attractions Magazine's Twitter account, YouTube channel, and view and publish wait times for attractions at the various theme parks around the country.
+    		</p>
+    		<p>
+    			<strong>Hidden Mickeys for Walt Disney World and Disneyland</strong>
+	    		<br>
+				We partnered with the author of the Hidden Mickey books (sold throughout the Disney theme parks), Steven Barrett, to bring his books to life. The apps utilized location and map services to guide users on hunts for hidden Mickeys throughout the Disney theme parks. The app also utilized Game Center to keep track of high scores and 100s of achievements.
+    		</p>
+		</p>
+    </p>
+    <hr>
+    <p>
+      <img 
+        src="https://media.giphy.com/media/l0HUpt2s9Pclgt9Vm/giphy.gif" 
+        width="200" 
+        height="150" 
+        style="border: 2px dashed #000080;" 
+        alt="Retro Computer GIF"
+      >
+    </p>
+  </div>
+  <footer>
+    <p>
+      You are visitor #
+      <span id="counter" class="counter"></span>
+    </p>
+    <p>&copy; 2025 rs17b &middot; All Rights Reserved</p>
+  </footer>
+  <script>
+    const randomVisitorCount = Math.floor(Math.random() * 99999) + 1;
+    const counterContainer = document.getElementById('counter');
+    const textContainer = document.createElement('div');
+    textContainer.textContent = randomVisitorCount;
+    counterContainer.appendChild(textContainer);
+  </script>
+</body>
+</html>
