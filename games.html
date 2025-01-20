@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>rs17b...in space!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html">About</a>
+    <a href="games.html">Games</a>
+    <a href="under_construction.html">Music</a>
+    <a href="links.html">Links</a>
+  </div>
+  <div class="container">
+    <marquee behavior="scroll" direction="left" scrollamount="4" style="color: #800080; font-weight: bold;">
+      Welcome to My Website!!! The Official Homepage for All Things Matthew Gambill!!!! 
+    </marquee>
+    <hr>
+    <div class="favorites-section">
+      <h2>My Favorite Games</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Game</th>
+            <th>Thumbnail</th>
+            <th>Wiki Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Interstate '76</td>
+            <td>
+              <img 
+                src="Interstate.png" 
+                alt="Interstate '76 Box Art" 
+                width="100"
+              >
+            </td>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Interstate_%2776_(video_game)" target="_blank">Interstate '76</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Chip's Challenge</td>
+            <td>
+              <img 
+                src="chips_challenge.png" 
+                alt="Chip's Challenge Box Art" 
+                width="100"
+              >
+            </td>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Chip%27s_Challenge" target="_blank">Chip's Challenge</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Halo: Combat Evolved</td>
+            <td>
+              <img 
+                src="halo_ce.jpg" 
+                alt="Halo: Combat Evolved Box Art" 
+                width="100"
+              >
+            </td>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Halo:_Combat_Evolved" target="_blank">Halo: Combat Evolved</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Fortnite</td>
+            <td>
+              <img 
+                src="fortnite.jpg" 
+                alt="Fortnite Box Art" 
+                width="100"
+              >
+            </td>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Fortnite" target="_blank">Fortnite</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Phasmophobia</td>
+            <td>
+              <img 
+                src="Phasmophobia.jpg" 
+                alt="Phasmophobia Box Art" 
+                width="100"
+              >
+            </td>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Fortnite" target="_blank">Phasmophobia</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr>
+    <p>
+      <img 
+        src="https://media.giphy.com/media/l0HUpt2s9Pclgt9Vm/giphy.gif" 
+        width="200" 
+        height="150" 
+        style="border: 2px dashed #000080;" 
+        alt="Retro Computer GIF"
+      >
+    </p>
+  </div>
+
+  <footer>
+    <p id="counter">
+      You are visitor #00000
+    </p>
+    <p>&copy; 2025 rs17b &middot; All Rights Reserved</p>
+  </footer>
+  <script>
+    const randomVisitorCount = (Math.floor(Math.random() * 99998) + 1).toString().padStart(5, '0');
+	document.getElementById('counter').textContent = 'You are visitor #' + randomVisitorCount;
+  </script>
+</body>
+</html>
