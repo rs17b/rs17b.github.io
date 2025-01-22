@@ -1,102 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>rs17b...in space!</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <title>rs17b</title>
 </head>
-
 <body>
-  <div class="navbar">
-    <a href="index.html">About</a>
-    <a href="games.html">Games</a>
-    <a href="under_construction.html">Music</a>
-    <a href="links.html">Links</a>
+  <div class="terminal">
+    <div id="output"></div>
+    :<span id="cursor">|</span>
   </div>
-  <div class="container">
-    <marquee behavior="scroll" direction="left" scrollamount="4" style="color: #800080; font-weight: bold;">
-      Welcome to My Website!!! The Official Homepage for All Things Matthew Gambill!!!! 
-    </marquee>
-    <hr>
-    <p align="left">
-		Hello, my name is Matthew Gambill, and I am a software engineer based in New York City. I pride myself on being a “fixer” who is passionate about performance, reliability, efficiency, and debugging, at scale. I operate autonomously, tackle ambiguous problems, and build cross-functional relationships, all while driving team and org goals.
-    </p>
-    <hr>
-    <p>
-    	Work Experience
-    	<br>
-    	<strong>Meta (Formerly Facebook)</strong>
-    	<br>
-    	2017 - 2023
-    	<br>
-    	<p>
-			<ul>
-				<li>Spearheaded numerous cross-functional initiatives related to the startup performance of the Facebook iOS app, drastically improving launch time and responsiveness, for example, optimized dynamic communication between embedded binaries, moved tens of MBs of code out of the startup set, built tooling to find large build graph dependencies only referenced for a small subset of functionality, etc.</li>
-				<li>Delivered major stability wins by diagnosing and fixing “super bugs,” cutting top crashes and reducing %SAD (sad users) by up to 90% in the Messenger iOS app.</li>
-				<li>Drove critical ML infrastructure improvements through Python modularity tooling and dynamic dead-code analysis investigations, ultimately advancing distributed training and inference efficiency at scale.</li>
-				<li>Optimized Instagram’s machine learning inference engine, reducing query time by 5–10%.</il>
-				<li>Led efforts to clean up error-categorization pipelines for FBLearner to improve reliability, reduce over-aggregation, and deliver actionable data for debugging.</li>
-				<li>Mentored senior engineers, contributing to their success by scoping projects and offering guidance on how to excel at Meta.</li>
-				<li>Gave tech talks at company-wide summits to share insights on the best practices for triaging and debugging complex crashes and reliability issues.</li>
-				<li>Consistently set the standard for engineering excellence by delivering unwieldy code refactors, performing in-depth code reviews, and leading bug fix-a-thons.</li>
-			</ul>
-		</p>
-    	<br>
-    	<br>
-    	<strong>Dow Jones and The Wall Street Journal</strong>
-    	<br>
-    	2013 - 2017
-    	<br>
-    	<p>
-    		I worked as a senior engineer to help shape the future of the flagship iOS and iPad app for the Wall Street Journal. I was successful in driving feature development and keeping the app healthy by focusing on key PREQ metrics.
-    		<ul>
-    			<li>Consistently delivered high impact feature development, for example, real-time inline stock quotes, recommended and saved articles, and interactive inline photo and media playback, that drove engagement and user signups.</li>
-    			<li>Led the refactoring efforts of the page layout system, enabling custom navigation and server driven section embedding.</li>
-    			<li>Architected the initial version of the WSJ app for Apple Watch.</li>
-    			<li>Advocated for increased efficiency including network usage, battery health, and crash reduction.</li>
-    		</ul>
-		</p>
-    	<br>
-    	<br>
-    	<strong>Campbell/Gambill Designs</strong>
-    	<br>
-    	2008 - 2013
-    	<br>
-    	<p>
-    		I cofounded an app development agency after the release of iPhoneOS 2.0 and the App Store in the Summer of 2008. My partner and I created and distributed dozens of apps during the agency's active years and partnered with clients to bring their visions to life. Some notable selections are listed below:
-    		<p>
-    			<strong>Attractions Magazine iOS and iPad App</strong>
-	    		<br>
-    			This app was released with the introduction of the iPad and served as the digital hub for Attractions Magazine (a theme park publication specializing in Disney and Universal). It incorporated a store where users could buy individual magazine issues or subscribe on a yearly basis and receive issues as they were published. The app also allowed users to view Attractions Magazine's Twitter account, YouTube channel, and view and publish wait times for attractions at the various theme parks around the country.
-    		</p>
-    		<p>
-    			<strong>Hidden Mickeys for Walt Disney World and Disneyland</strong>
-	    		<br>
-				We partnered with the author of the Hidden Mickey books (sold throughout the Disney theme parks), Steven Barrett, to bring his books to life. The apps utilized location and map services to guide users on hunts for hidden Mickeys throughout the Disney theme parks. The app also utilized Game Center to keep track of high scores and 100s of achievements.
-    		</p>
-		</p>
-    </p>
-    <hr>
-    <p>
-      <img 
-        src="https://media.giphy.com/media/l0HUpt2s9Pclgt9Vm/giphy.gif" 
-        width="200" 
-        height="150" 
-        style="border: 2px dashed #000080;" 
-        alt="Retro Computer GIF"
-      >
-    </p>
-  </div>
-
-  <footer>
-    <p id="counter">
-      You are visitor #00000
-    </p>
-    <p>&copy; 2025 rs17b &middot; All Rights Reserved</p>
-  </footer>
   <script>
-    const randomVisitorCount = (Math.floor(Math.random() * 99998) + 1).toString().padStart(5, '0');
-	document.getElementById('counter').textContent = 'You are visitor #' + randomVisitorCount;
+    const lines = [
+      "Booting...",
+      "<hr>",
+      
+      "<p>",
+      "Loading profile...",
+      "<br>",
+      "Hello, my name is Matthew Gambill, and I am a software engineer based in New York City. I pride myself on being a “fixer” who is passionate about performance, reliability, efficiency, and debugging, at scale. With over 15 years of industry experience, I have a proven track record for technical leadership, takling ambiguous problems, and building cross-functional relationships, all while driving team and org goals.",
+      "<br>",
+      "<span class='success'>[SUCCESS]</span>",
+      "<hr>",
+      "</p>",
+      
+      "<p>",
+      "Loading work experience...",
+      "</p>",
+      
+      "<p>",
+      "<span class='highlight'>Meta (Formerly Facebook) 2017 - 2023</span>",
+      "<li>Spearheaded numerous cross-functional initiatives related to the startup performance of the Facebook iOS app, drastically improving launch time and responsiveness, for example, optimized dynamic communication between embedded binaries, moved tens of MBs of code out of the startup set, built tooling to find large build graph dependencies only referenced for a small subset of functionality, etc.</li>",
+      "<li>Delivered major stability wins by diagnosing and fixing \"super bugs,\" cutting top crashes and reducing %SAD (sad users) by up to 90% in the Messenger iOS app.</li>",
+      "<li>Drove critical ML infrastructure improvements through Python modularity tooling and dynamic dead-code analysis investigations, ultimately advancing distributed training and inference efficiency at scale.</li>",
+      "<li>Optimized Instagram’s machine learning inference engine, reducing query time by 5–10%.</li>",
+      "<li>Led efforts to clean up error-categorization pipelines for FBLearner to improve reliability, reduce over-aggregation, and deliver actionable data for debugging.</li>",
+      "<li>Mentored senior engineers, contributing to their success by scoping projects and offering guidance on how to excel at Meta.</li>",
+      "<li>Gave tech talks at company-wide summits to share insights on the best practices for triaging and debugging complex crashes and reliability issues.</li>",
+      "<li>Consistently set the standard for engineering excellence by delivering unwieldy code refactors, performing in-depth code reviews, and leading bug fix-a-thons.</li>",
+      "</p>",
+
+      "<br>",
+      
+      "<p>",
+      "<span class='highlight'>Dow Jones and The Wall Street Journal 2013 - 2017</span>",
+      "<li>Consistently delivered high impact feature development, for example, real-time inline stock quotes, recommended and saved articles, and interactive inline photo and media playback, that drove engagement and user signups.</li>",
+      "<li>Led the refactoring efforts of the page layout system, enabling custom navigation and server driven section embedding.</li>",
+      "<li>Architected the initial version of the WSJ app for Apple Watch.</li>",
+      "<li>Advocated for increased efficiency including network usage, battery health, and crash reduction.</li>",
+      "</p>",
+      
+      "<br>",
+      
+      "<p>",
+      "<span class='highlight'>Campbell/Gambill Designs 2008 - 2013</span>",
+      "I cofounded an app development agency after the release of iPhoneOS 2.0 and the App Store in the Summer of 2008. My partner and I created and distributed dozens of apps during the agency's active years and partnered with clients to bring their visions to life. Some notable selections are listed below:",
+      "<p>",
+      "Attractions Magazine iOS and iPad App",
+      "This app was released with the introduction of the iPad and served as the digital hub for Attractions Magazine (a theme park publication specializing in Disney and Universal). It incorporated a store where users could buy individual magazine issues or subscribe on a yearly basis and receive issues as they were published. The app also allowed users to view Attractions Magazine's Twitter account, YouTube channel, and view and publish wait times for attractions at the various theme parks around the country.",
+      "</p>",
+      "<p>",
+      "Hidden Mickeys for Walt Disney World and Disneyland",
+      "We partnered with the author of the Hidden Mickey books (sold throughout the Disney theme parks), Steven Barrett, to bring his books to life. The apps utilized location and map services to guide users on hunts for hidden Mickeys throughout the Disney theme parks. The app also utilized Game Center to keep track of high scores and 100s of achievements.",     
+      "<br>",
+      "<span class='success'>[SUCCESS]</span>",
+      "<hr>",
+      "</p>", 
+      
+      "<p>",
+      "Loading skills...",
+      "</p>",
+      
+      "<p>",
+      "<li>C</li>",
+      "<li>C++</li>",
+      "<li>Objective-C</li>",
+      "<li>Swift</li>",
+      "<li>Python</li>",
+      "<li>ARM Assembly</li>",
+      "<li>Debugging</li>",
+      "<li>System Design</li>",
+      "<li>Mobile Application Architecture</li>",
+      "<li>Technical Leadership</li>",
+      "<br>",
+      "<span class='success'>[SUCCESS]</span>",
+      "<hr>",
+      "</p>",
+      
+      "<p>",
+      "Finished booting <span class='success'>[OK]</span>",
+      "</p>"
+    ];
+
+    const output = document.getElementById("output");
+    let lineIndex = 0;
+
+    function displayNextLine() {
+      if (lineIndex < lines.length) {
+        const lineElement = document.createElement("div");
+        lineElement.innerHTML = lines[lineIndex];
+        output.appendChild(lineElement);
+        lineIndex++;
+        setTimeout(() => {
+          displayNextLine();
+        }, Math.random() * 600);
+      }
+    }
+    displayNextLine();
   </script>
 </body>
 </html>
